@@ -1,5 +1,9 @@
 ## Roles for managing imagebuilder on premise with Satellite
 
+Fork it. Clone it. Configure it. Test it. Change it. Commit it. Create a PR.
+
+***
+
 This project is designed to help setup Imagebuilder in on premise VMs for delivering VM images. 
 Images can be provided to any of the existing Satellite compute resources.
 The project is targeting the following workflow.
