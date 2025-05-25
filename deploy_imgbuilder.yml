@@ -15,21 +15,6 @@
   # for completeness, we would check registration and repository configuration
   # but we aren't going to as this system will always be installed by
   # Satellite
-    - name: "Ensure repos for RHEL7, for later releases imagebuilder pkgs are in the base repos"
-      when: ansible_distribution_major_version == "7"
-      block:
-        - name: "DEPRECATION WARNING"
-          ansible.builtin.debug:
-            msg: "RHEL7 has reached end of maintenance - this functionality in no longer supported and will be removed"
-
-        - name: "Configure RHEL7 Repos"
-          community.general.rhsm_repository:
-            name: rhel-7-server-extras-rpms
-
-        - name: Set the imagebuilder package name
-          ansible.builtin.set_fact:
-            composer_main_pkg: "lorax-composer"
-
     - name: "Install imagebuilder packages"
       ansible.builtin.dnf:
         name:
