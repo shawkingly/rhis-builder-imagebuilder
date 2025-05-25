@@ -2,7 +2,7 @@
 # This playbook deploys and configures the image builder software on RHEL 7 and RHEL 8
 #
 
-- name: Deploying Image Builder
+- name: "Deploying Image Builder on RHEL9"
   hosts: all
   gather_facts: true
 
