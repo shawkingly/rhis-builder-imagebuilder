@@ -1,0 +1,5 @@
+---
+
+host:
+  fqdn: imagebuilder9.example.ca
+  organization: Default Organization
