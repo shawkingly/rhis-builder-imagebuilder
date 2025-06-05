@@ -17,4 +17,4 @@ The project is targeting the following workflow.
 - upload image to target                                  [role: soe-image-upload]
 - register image with Satellite compute resource          [role: soe-image-register]
 
-
+See rhis-builder-vault-SAMPLE repo for secrets definitions.
